@@ -169,27 +169,7 @@ global class ProductRestAPI {
         //Return this product to the third party system as a response
         return response; 
     }  
-    /*
-	@HttpPatch
-	global static Product__c updatePrdts(){
-
-	RestRequest ProductRequest = RestContext.request;
-	String PrdtRequestURI = ProductRequest.requestURI;
-	String prdtID = PrdtRequestURI.substring(PrdtRequestURI.lastIndexOf('/')+1);
-	String requestBody = ProductRequest.toString();
-	Product__c Product__c;
-
-	if(!String.isEmpty(prdtID)){
-	Product__c = (Product__c)JSON.deserialize(requestBody.Product__c.class);
-	Product__c.Id = prdtID;
-	Update prdtID;
-
-	}
-
-	return Product__c;
-	}
-	*/
-    
+  
     
     global class ProductDetail {
         global Boolean success;
