@@ -1,0 +1,22 @@
+<apex:page standardController="Tourist_Places__c" >
+<apex:pagemessages />
+<apex:pageMessage severity="error"/>
+    <apex:form > 
+ 
+        <apex:pageblock >
+            <apex:pageblockSection title="information"  collapsible="false"   >
+                <apex:inputField value="{!Tourist_Places__c.Name}" />
+                <apex:inputField value="{!Tourist_Places__c.Account__c}" /> 
+                <apex:inputField value="{!Tourist_Places__c.Amount_needed__c}" /> 
+            </apex:pageblockSection>
+
+
+            <apex:pageBlockButtons location="bottom" >
+                    <apex:commandButton value="Save"  action="{!save}" title="this saves the record"/>
+                    <apex:commandButton value="cancel" action="{!Cancel}"> </apex:commandButton>
+            </apex:pageBlockButtons>
+
+</apex:pageblock>
+
+</apex:form> 
+</apex:page>

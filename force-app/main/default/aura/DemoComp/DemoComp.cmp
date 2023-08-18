@@ -1,0 +1,35 @@
+<aura:component >
+    <aura:attribute name="Var1" type = "String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:attribute name="newAcc" type = "Account"
+                    Default = "{'sObjecType':'Account','Name':'TestAcc1'}"/>
+    
+    <aura:attribute name="ArrayDemo" type="String[]"
+                    Default="['v1','v2','v3']"/>
+    <aura:attribute name="demoList" type="List"
+                    Default="['List1','List2',List3']"/>
+    <aura:attribute name="demoSet" type="Set"
+                    Default="['Set1','Set2','Set3']"/>
+    <aura:attribute name="demoMap" type="Map"
+                     Default="{a:'Map1',b:'Map2',c:'Map3'}"/>
+    <aura:attribute name="jsObject" type="Object"/>
+    <aura:attribute name="userData" type="LCDemoWrapper.WrapperTest"/>
+    
+    Array Values:{!v.ArrayDemo[0]} {!v.ArrayDemo[2]}
+    <h1/>
+    List Values : {!v.demoList[1]}
+    <h1/>
+    Set Values : {!v.demoSet[0]}
+    <h1/>
+    Map Values : {!v.demoMap.c}
+    <h1/>
+    Lenght of List : {!v.demoList.length}
+    <h1/>
+    jsobject Values :{!v.jsObject.name} - {!v.jsObject.email}
+    <h1/>
+    Wrapper Values : {!v.userData.myString1} - {!v.userData.myInteger1}
+    
+                    
+    
+</aura:component>

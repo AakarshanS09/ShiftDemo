@@ -1,0 +1,18 @@
+<apex:page standardController="Account" applyBodyTag="false">
+ <head>
+ <style type="text/css">
+ body { font-family: Arial Unicode MS; }
+ </style>
+ </head>
+ <h1>Account Information</h1>
+ <apex:panelGrid columns="2" border="1" cellspacing="0" cellPadding="5" width="100%">
+ <apex:outputText value="{!$ObjectType.Account.fields.Name.label}" />
+ <apex:outputText value="{!Account.Name}" />
+ <apex:outputText value="{!$ObjectType.Account.fields.Phone.label}" />
+ <apex:outputText value="{!Account.Phone}" />
+ <apex:outputText value="{!$ObjectType.Account.fields.AnnualRevenue.label}" />
+ <apex:outputText value="{!Account.AnnualRevenue}" />
+ <apex:outputText value="…" />
+ <apex:outputText value="…" />
+ </apex:panelGrid>
+</apex:page>

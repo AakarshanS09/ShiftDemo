@@ -1,0 +1,7 @@
+<aura:component >
+    <p>Click the button to trigger thr controller to throw an error.</p>
+    <div aura:id="div1">
+    </div>
+    <lightning:button label="Throw Error" onclick="{!c.throwError}"/>
+	
+</aura:component>

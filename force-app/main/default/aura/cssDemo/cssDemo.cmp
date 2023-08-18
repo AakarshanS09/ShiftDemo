@@ -1,0 +1,12 @@
+<aura:component >
+    <div class="green">
+    	Hello Lightning
+    </div>
+    <div>Hello Aura</div>
+    
+	<ul>
+    <li class="red">My background is red</li>
+    <li class="pink">My background is pink</li>
+    
+    </ul>
+</aura:component>

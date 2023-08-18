@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:attribute name="dateValue" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <p>
+        Date and Time Right now : {!v.dateValue}
+    </p>
+	
+</aura:component>

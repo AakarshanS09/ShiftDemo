@@ -1,0 +1,20 @@
+<apex:page >
+    <apex:form >
+        <apex:pageBlock title="Page with Sections">
+            <apex:pageBlockSection title="Section 01">
+                {! $User.FirstName & '-' & $User.LastName}
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Section 02">
+                <p>
+                    The Current Year is {!Year(TODAY())}
+                </p>
+                <p>
+                    {!IF(CONTAINS("Salesforce","force"),'YES','NO')}
+                </p>
+                
+                
+            </apex:pageBlockSection>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
