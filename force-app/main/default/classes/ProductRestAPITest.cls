@@ -28,7 +28,7 @@ public class ProductRestAPITest {
         ProductRestAPI.ProductDetail response = ProductRestAPI.getProducts();
 
         System.assertEquals(true, response.success, 'Result of the process');
-        System.assertEquals('Product details retrieved successfully', response.message, 'The product message');
+        System.assertEquals('Product details retrieved successfully', response.message, 'product  details message');
         System.assertEquals(pdt.Id, response.productId, 'Records ID');
         System.assertEquals(pdt.Name, response.productName, 'Name of the Record');
         System.assertEquals(200, RestContext.response.statusCode, 'Status Code');
